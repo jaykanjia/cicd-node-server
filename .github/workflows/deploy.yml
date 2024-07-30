@@ -40,7 +40,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /home/tscadmin/tscadmin
+            cd /home/tscadmin/cicd-node-server
             git pull
             git status
             npm install --only=prod
