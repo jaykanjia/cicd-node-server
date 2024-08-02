@@ -40,7 +40,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /home/cicd/cicd-node-server
+            cd /home/cicd/projects/cicd-node-server
             git pull
             git status
             yarn install
