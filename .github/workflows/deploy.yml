@@ -43,3 +43,8 @@ jobs:
             cd /home/tscadmin/tscadmin/cicd-node-server
             git pull
             git status
+            node -v
+            nvm -v
+            nvm use 18
+            node -v
+            pwd
