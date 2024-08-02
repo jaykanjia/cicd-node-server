@@ -40,9 +40,9 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /home/cicd/projects/cicd-node-server
+            cd /home/tscadmin/tscadmin/cicd-node-server
             git pull
             git status
             yarn install
             yarn build
-            yarn start
+            pm2 restart cicd-node-server
