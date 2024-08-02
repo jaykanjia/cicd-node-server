@@ -43,6 +43,7 @@ jobs:
             cd /home/tscadmin/tscadmin/cicd-node-server
             git pull
             git status
+            nvm use 18
             yarn install
             yarn build
             pm2 restart cicd-node-server
