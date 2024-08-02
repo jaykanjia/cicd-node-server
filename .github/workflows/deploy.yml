@@ -44,7 +44,6 @@ jobs:
             git pull
             git status
             node -v
-            nvm -v
             source ~/.nvm/nvm.sh
             nvm -v
             nvm use 18
